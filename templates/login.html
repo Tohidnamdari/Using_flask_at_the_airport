@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="./static/staylelogin.css">
+</head>
+<body id="grad">
+
+<form action="/login" method="POST">
+  <div class="main">
+    <p class="sign" align="center">log in</p>
+    <form class="form1">
+      <input class="un " type="text" align="center" placeholder="Username" name="user" required>
+      <input class="pass" type="password" align="center" placeholder="Password" name="pas" required>
+      <input class="submit" value="login" type="submit">
+        <br> <br>
+       <a class="submit1" align="center" href="/signup">rijester</a>
+        <p>{{result}}</p>
+        </form>
+  </div>
+
+</form>
+        </div>
+</body>
+</html>

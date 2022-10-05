@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+        <link rel="stylesheet" href="./static/stayle.css">
+</head>
+<body id="grad">
+
+<form action="/login" method="POST">
+  <div class="main">
+    <p class="sign" align="center"> add</p>
+    <form class="form1">
+      <input class="pass" type="number" align="center" placeholder="شماره پرواز " name="number" required>
+      <input class="pass" type="time" align="center" placeholder="تایم پرواز   " name="time" required>
+      <input class="submit" value="add" type="submit">
+        <br> <br>
+       <a class="submit1" align="center" href="/logout">logout</a>
+        <p style="color: crimson" align="center">{{result}}</p>
+  </div>
+
+
+</form>
+        </div>
+</body>
+</html>
