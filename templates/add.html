@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>login</title>
-        <link rel="stylesheet" href="./static/stayle.css">
-</head>
-<body id="grad">
+{%extends'base.html'%}
 
-<form action="/login" method="POST">
+{%block content%}
+<form action="/add_list" method="POST">
   <div class="main">
     <p class="sign" align="center"> add</p>
     <form class="form1">
@@ -17,10 +11,10 @@
         <br> <br>
        <a class="submit1" align="center" href="/logout">logout</a>
         <p style="color: crimson" align="center">{{result}}</p>
+      <a class="submit1" align="center" href="/delete">deleet</a>
+    </form>
   </div>
 
-
 </form>
-        </div>
-</body>
-</html>
+{%endblock%}
+

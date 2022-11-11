@@ -1,13 +1,8 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-    <meta>
-    <title>salam</title>
-    <link rel="stylesheet" href="./static/flas.css">
-</head>
-<body class="bak">
-<h3>{{time}}</h3>
-<h1>{{date}}</h1>
+{%extends'base.html'%}
+
+{%block content%}
+<div>
+
 <table style="width:100%">
   <tr>
     <th>flight number</th>
@@ -16,17 +11,15 @@
   {% for i in range(items)%}
     <tr>
         <td>
-            {{too[i]}}
+            {{flight[i].flight_number}}
         </td>
         <td>
-           {{op[i]}}
+           {{flight[i].flight_time}}
         </td>
     </tr>
 
     {% endfor %}
 </table>
-<center>
-<br><br>
-    </center>
-</body>
-</html>
+
+</div>
+{%endblock%}
